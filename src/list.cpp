@@ -4,6 +4,7 @@ void List::print_menu(){
     int choice;
 
     cout << "********************\n";
+    cout << "Simple List Project\n";
     cout << "1 - Print list\n";
     cout << "2 - Add to list\n";
     cout << "3 - Delete from list\n";
@@ -60,12 +61,12 @@ void List::delete_item(){
     }
     
     cout << "Select an item number to delete: ";
-    unsigned int index;
-    cin >> index;
-    index = index - 1; // Adjust for 0-based indexing
-    if(index >=0 && index < list.size()){
-        cout << "'" << list[index] << "' has been deleted from the list\n\n\n\n\n";
-        list.erase(list.begin() + index);
+    unsigned int choiceNumber;
+    cin >> choiceNumber;
+    choiceNumber = choiceNumber - 1; // Adjust for 0-based indexing
+    if(choiceNumber >=0 && choiceNumber < list.size()){
+        cout << "'" << list[choiceNumber] << "' has been deleted from the list\n\n\n\n\n";
+        list.erase(list.begin() + choiceNumber);
     }
     else{
         cout << "Invalid index number\n\n\n\n\n";
