@@ -4,8 +4,9 @@
 
 # Compiler settings - Can be customized.
 CC = g++
-CXXFLAGS = -std=c++11 -Wall
+CXXFLAGS = -std=c++11 -Wall -g
 LDFLAGS = 
+
 
 # Makefile settings - Can be customized.
 APPNAME = SimpleList
